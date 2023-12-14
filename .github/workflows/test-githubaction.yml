@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v4w
+        uses: actions/checkout@v4
       - name: Build and tag docker image
         run : |
           docker build -t ${{secrets.USERNAME}}/action-project1:v1 -f Dockerfile .
